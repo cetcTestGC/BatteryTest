@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">batteryv2</string>
+    <string name="hello">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="t1">Battery_V1</string>
+    <string name="t2">Battery_V1</string>
+    <string name="good">Good</string>
+   	<string name="overvoltage">OverVoltage</string>
+	<string name="overheat">OverHeat</string>
+	<string name="dead">Dead</string>
+	<string name="unspecifiedfailure">UnspecifiedFailure</string>
+	<string name="unknown">Unknown</string>
+	<string name="str_btn_clear">一键清理内存</string>
+	<string name="str_sel_mode_txt">CPU运行模式选择</string>
+	<string name="str_cpu_mode_name">CPU工作模式选择</string>
+	<string name="str_cpu_info_txt">CPU运行信息显示</string>
+	<string name="cpuinfo">CPUInfo</string>
+	<string name="meminfo">MemInfo</string>
+	<string name="p_mode_set">省电模式</string>
+	<string name="fragment3_statistictext">流量上传/下载</string>
+	<string name="fragment3_uptext">up</string>
+	<string name="fragment3_downtext">down</string>
+
+</resources>

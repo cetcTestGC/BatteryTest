@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.SetCpuMode.SetCpuModeActivity" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:background="#ff303743"
+        android:gravity="left|center"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:text="现在所使用模式"
+        android:textColor="#ff767e8d" 
+        android:textSize="20dp"/>
+    
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/p_selector_btn_trans"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="模式 ："
+            android:textColor="#ff767e8d"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:id="@+id/currentGovernor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please wait..."
+            android:textColor="#ff70bd34"
+            android:textSize="17dp" />
+    </LinearLayout>
+    
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+    
+    <TextView android:textColor="#ff767e8d" 
+        android:gravity="left|center" 
+        android:background="#ff303743" 
+        android:paddingLeft="16dp" 
+        android:paddingRight="12dp" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="模式设置" />
+    
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+    
+    <LinearLayout 
+       android:id="@+id/sel_cpu_nor_mode_linearlayout"
+       android:gravity="center_vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="64dp"
+       android:background="@drawable/p_selector_btn_trans">
+       <TextView android:textSize="16sp" 
+           android:textColor="@color/p_selector_color_gray" 
+           android:gravity="left|center" 
+           android:layout_width="wrap_content" 
+           android:layout_height="fill_parent" 
+           android:text="正常模式" 
+           android:layout_weight="1.0" />
+       <TextView android:textSize="14sp" 
+           android:textColor="#ff586272" 
+           android:gravity="right|center"  
+           android:layout_width="wrap_content" 
+           android:layout_height="fill_parent" 
+           android:text="开启" 
+           android:layout_weight="1.0" />
+       <ImageView
+           android:layout_width="28dp" 
+           android:layout_height="28dp" 
+           android:src="@drawable/p_selector_arrow_right_gra" />
+   </LinearLayout>
+   
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+     
+    <LinearLayout 
+       android:id="@+id/sel_cpu_best_mode_linearlayout"
+       android:gravity="center_vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="64dp"
+       android:background="@drawable/p_selector_btn_trans">
+       <TextView android:textSize="16sp" 
+           android:textColor="@color/p_selector_color_gray" 
+           android:gravity="left|center" 
+           android:layout_width="wrap_content" 
+           android:layout_height="fill_parent" 
+           android:text="最佳模式" 
+           android:layout_weight="1.0" />
+       <TextView android:textSize="14sp" 
+           android:textColor="#ff586272" 
+           android:gravity="right|center"  
+           android:layout_width="wrap_content" 
+           android:layout_height="fill_parent" 
+           android:text="开启" 
+           android:layout_weight="1.0" />
+       <ImageView
+           android:layout_width="28dp" 
+           android:layout_height="28dp" 
+           android:src="@drawable/p_selector_arrow_right_gra" />
+   </LinearLayout>
+   
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+     
+    <LinearLayout 
+       android:id="@+id/sel_cpu_low_mode_linearlayout"
+       android:gravity="center_vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="64dp"
+       android:background="@drawable/p_selector_btn_trans">
+       <TextView android:textSize="16sp" 
+           android:textColor="@color/p_selector_color_gray" 
+           android:gravity="left|center" 
+           android:layout_width="wrap_content" 
+           android:layout_height="fill_parent" 
+           android:text="低功耗模式" 
+           android:layout_weight="1.0" />
+       <TextView android:textSize="14sp" 
+           android:textColor="#ff586272" 
+           android:gravity="right|center"  
+           android:layout_width="wrap_content" 
+           android:layout_height="fill_parent" 
+           android:text="开启" 
+           android:layout_weight="1.0" />
+       <ImageView
+           android:layout_width="28dp" 
+           android:layout_height="28dp" 
+           android:src="@drawable/p_selector_arrow_right_gra" />
+   </LinearLayout>
+   
+   <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+   
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff1d222a"
+        android:orientation="vertical">"
+        <TextView android:textSize="14dp" 
+            android:textColor="#ff586277" 
+            android:paddingLeft="16dp" 
+            android:paddingRight="16dp"
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content" 
+             android:layout_marginTop="6dp" 
+             android:text="提示框:" />
+        <TextView android:textSize="14dp" 
+            android:textColor="#ff586277" 
+            android:paddingLeft="16dp" 
+            android:paddingRight="16dp"
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content" 
+             android:layout_marginTop="6dp" 
+             android:text="正常模式:本模式为手机自带CPU调节模式"/>
+        
+        <TextView android:textSize="14dp" 
+            android:textColor="#ff586277" 
+            android:paddingLeft="16dp" 
+            android:paddingRight="16dp"
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content" 
+             android:layout_marginTop="6dp" 
+             android:text="最佳模式:高性能模式,按你设定范围的最高频率运行,即使手机处于空闲状态,频率也为最高,速度极快,但电量消耗较快,温度较高"/>
+        
+        <TextView android:textSize="14dp" 
+            android:textColor="#ff586277" 
+            android:paddingLeft="16dp" 
+            android:paddingRight="16dp"
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content" 
+             android:layout_marginTop="6dp" 
+             android:text="低功耗模式:按设定最低频率运行,关屏睡眠时推荐使用此调节模式,非常省电但系统响应速度慢"/>
+        
+	    </LinearLayout> 
+
+    
+</LinearLayout>

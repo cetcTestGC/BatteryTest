@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="horizontal" android:layout_gravity="center_vertical">
+
+	<ImageView android:id="@+id/fragment3_imgApp" android:layout_width="50dp"
+	    android:contentDescription="@string/app_name"
+		android:layout_height="50dp"
+		android:adjustViewBounds="true" 
+		android:padding="5dp" 
+		android:layout_gravity="center"
+		></ImageView>
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" android:gravity="right" android:padding="10dp"
+	    >
+		<TextView android:id="@+id/fragment3_tvAppLabel" android:layout_width="wrap_content"
+			 android:layout_height="50dp"
+			 android:text="@string/app_name" android:textColor="#fafafa"
+			android:gravity="left|center_vertical" android:textSize="16sp"></TextView>
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+		     android:gravity="right" android:padding="10dp">
+		 <TextView 
+		     android:id="@+id/fragment3_statisticjudgement" android:layout_width="wrap_content"
+		     android:layout_height="wrap_content" android:text="@string/fragment3_statistictext"  
+		     android:textSize="13sp" android:textColor="#afbfff"
+		  ></TextView>		
+		 <TextView 
+		     android:id="@+id/fragment3_tvuplabel" android:layout_width="wrap_content"
+		     android:layout_height="wrap_content" android:text="@string/fragment3_uptext"  
+		     android:textSize="12sp" android:layout_below="@id/fragment3_statisticjudgement"
+		  ></TextView>
+		 <TextView 
+		     android:id="@+id/fragment3_tvdownlabel" android:layout_width="wrap_content"
+		     android:layout_height="wrap_content" android:text="@string/fragment3_downtext" 
+		     android:layout_below="@id/fragment3_tvuplabel" android:textSize="12sp"
+		     ></TextView>
+		    
+		    </RelativeLayout>
+	 
+</LinearLayout>

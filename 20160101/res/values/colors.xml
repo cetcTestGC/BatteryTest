@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#0000</color>
+    <color name="white">#fff</color>
+    <color name="weibo_listtab_off">#8d8d8d</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="Fluorescent_green">#70bd34</color>
+    <color name="black_disable">#586272</color>
+    <color name="p_button_bg_pressed">#19000000</color>
+    <color name="p_button_bg_unpressed">#ff1d222a</color>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff1d222a"
+    android:orientation="vertical" >
+
+    <!-- cpu's information -->
+    <TextView
+        android:id="@+id/txt_content_cpu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:text="@string/cpuinfo"
+        android:textColor="#77990000"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/cpuLv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_content_cpu" />
+
+    <!-- memory's information -->
+    <TextView
+        android:id="@+id/txt_content_mem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:text="@string/meminfo"
+        android:textColor="#77990000"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/memLv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_content_mem" />
+
+    <!-- sensor's information -->
+    <TextView
+        android:id="@+id/txt_content_sensor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:text="sensorinfo"
+        android:textColor="#77990000"
+        android:textSize="20dp" />
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">"
+	    <TextView
+	        android:id="@+id/accTextView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="1"/>
+	    <TextView
+	        android:id="@+id/accTextViewValue"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"/>
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/lightTextView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="1"/>
+	    <TextView
+	        android:id="@+id/lightTextViewValue"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="1"/>
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/orientationTextView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="1"/>
+	    <TextView
+	        android:id="@+id/orientationTextViewValue"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="1"/>
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/magneticTextView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="1"/>
+	    <TextView
+	        android:id="@+id/magneticTextViewValue"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="1"/>
+	</LinearLayout>
+</LinearLayout>

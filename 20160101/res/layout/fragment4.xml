@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ff1d222a" 
+	    android:orientation="vertical"
+	    >
+
+        <com.example.ModeUI.RoundProgressBar
+        android:id="@+id/roundProgressBar1"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="36dp" />
+        
+        <Button
+		    android:id="@+id/cle_mem_btn"
+		    android:layout_width="200dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="85dp"
+		    android:layout_marginTop="30dp"
+		    android:text="@string/str_btn_clear" />
+	    </LinearLayout>
+	    
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+
+    <LinearLayout
+        android:id="@+id/sel_low_power_mode_liner"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/p_selector_btn_trans"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/mode_cpu_logo"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/cpu_logo" />
+
+        <TextView
+            android:id="@+id/mode_cpu_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="left|center"
+            android:text="@string/p_mode_set"
+            android:textColor="@color/p_selector_color_gray"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/p_selector_arrow_right_gra" />
+    </LinearLayout>
+    
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+
+    <LinearLayout
+        android:id="@+id/sel_mode_liner"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/p_selector_btn_trans"
+        android:gravity="center_vertical"  >
+
+        <ImageView
+            android:id="@+id/mode_cpu_logo"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/cpu_logo" />
+        
+        <TextView
+            android:id="@+id/mode_cpu_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="left|center"
+            android:text="@string/str_sel_mode_txt"
+            android:textColor="@color/p_selector_color_gray"
+            android:textSize="20sp" />
+		
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/p_selector_arrow_right_gra" />
+
+
+    </LinearLayout>
+    
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+    
+    <LinearLayout
+        android:id="@+id/cpu_info_liner"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/p_selector_btn_trans"
+        android:gravity="center_vertical" 
+         >
+		
+        <ImageView
+            android:id="@+id/mode_cpu_logo"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/cpu_logo" />
+        
+        <TextView
+            android:id="@+id/mode_cpu_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="left|center"
+            android:text="@string/str_cpu_info_txt"
+            android:textColor="@color/p_selector_color_gray"
+            android:textSize="20sp" />
+
+        
+		<ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/p_selector_arrow_right_gra" />       
+    </LinearLayout>
+    
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff1d222a">
+        
+	    </LinearLayout> 
+
+</LinearLayout>

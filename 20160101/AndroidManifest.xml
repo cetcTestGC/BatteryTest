@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.batteryv2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    
+        <uses-permission android:name="android.permission.GET_TASKS" />
+        <uses-permission android:name="android.permission.RESTART_PACKAGES"/>  
+        <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+        <!-- 设置飞行模式 权限 -->
+        <uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+        <!-- 电量监控 -->
+		<uses-permission android:name="android.permission.BATTERY_STATS"/>
+		<!-- 开启自动启动service  -->
+		<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+		<uses-permission android:name="android.permission.INTERNET"/>
+		<uses-permission android:name="android.permission.WRITE_SMS"/>
+		<uses-permission android:name="android.permission.SEND_SMS"/>
+		<uses-permission android:name="android.permission.READ_SMS"/>
+		
+        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>    
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.BLUETOOTH"/>
+        <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+        <uses-permission android:name="android.permission.VIBRATE"/>
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> 
+        <uses-permission android:name="android.permission.WRITE_SETTINGS" />  
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />  
+		
+		
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"/>
+                <action android:name="android.media.RINGER_MODE_CHANGED"/>
+                <action android:name="android.intent.action.ANY_DATA_STATE"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.example.SetCpuMode.SetCpuModeActivity"
+            	  
+            	  android:label="@string/app_name"
+            	  >
+        </activity>
+        
+        <activity android:name="com.example.SavePowerMode.SavePowerModeActivity"
+            	  
+            	  android:label="@string/app_name"
+            	  >
+        </activity>
+        
+       <activity
+            android:name="com.example.getAppInfo.BrowseProcessInfoActivity"/>
+        <activity
+            android:name="com.example.getAppInfo.BrowseRunningAppActivity"/>
+        
+        <service android:name="com.example.SavePowerMode.MonitorService">
+            <intent-filter>
+                <action android:name="MonitorService"></action>
+            </intent-filter>
+        </service>
+        
+        <service android:name="com.example.DBHelper.DBService">
+            <intent-filter>
+                <action android:name="DBService"></action>
+            </intent-filter>
+        </service>
+        
+        
+        <activity android:name="com.example.BasicInfo.basicInformation"
+            	  android:label="@string/str_cpu_info_txt">
+            
+        </activity>
+        
+        <service android:name="com.example.batteryv2.MyService" /> 
+        
+        <receiver android:name="com.example.BootService.BootReceiver" >    
+   		 <intent-filter>    
+     	  <action android:name="android.intent.action.BOOT_COMPLETED" />       
+  		  </intent-filter>    
+		</receiver>
+		
+        
+        
+    </application>
+    
+    
+
+</manifest>

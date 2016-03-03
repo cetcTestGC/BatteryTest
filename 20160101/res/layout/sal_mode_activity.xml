@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+	
+    <TextView android:textColor="#ff767e8d" 
+        android:gravity="left|center" 
+        android:background="#ff303743" 
+        android:paddingLeft="16dp" 
+        android:paddingRight="12dp" 
+        android:layout_width="fill_parent" 
+        android:layout_height="36dp" 
+        android:text="数据库设置" />
+    
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+    
+    <include android:id="@+id/sql_switch_include"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       layout="@layout/sql_switch_item" />
+    
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+    
+    <TextView android:textColor="#ff767e8d" 
+        android:gravity="left|center" 
+        android:background="#ff303743" 
+        android:paddingLeft="16dp" 
+        android:paddingRight="12dp" 
+        android:layout_width="fill_parent" 
+        android:layout_height="36dp" 
+        android:text="邮件发送" />
+    
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+    
+    <LinearLayout 
+       android:id="@+id/send_email_switch_layout"
+       android:gravity="center_vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="64dp"
+       android:background="@drawable/p_selector_btn_trans">
+       
+        <ImageView 
+	            android:id="@+id/send_email_icon" 
+	            android:layout_width="28dp" 
+	            android:layout_height="28dp" 
+	            android:layout_marginLeft="16dp" 
+	            android:layout_marginRight="14dp" 
+	            android:src="@drawable/email_logo" 
+	            />
+        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="6.08"
+	            android:gravity="center_vertical"
+	            android:orientation="vertical" >
+	            
+	             <TextView
+	                 android:id="@+id/power_low_title"
+	                 android:layout_width="233dp"
+	                 android:layout_height="wrap_content"
+	                 android:text="邮件发送"
+	                 android:textColor="#ffced5dc"
+	                 android:textSize="16sp" />
+	             
+	            <LinearLayout 
+	                android:gravity="left|center" 
+	                android:layout_width="fill_parent" 
+	                android:layout_height="wrap_content">
+
+	             <TextView
+	                 android:id="@+id/p_main_mode_auto_br"
+	                 android:layout_width="242dp"
+	                 android:layout_height="fill_parent"
+	                 android:text="点击此处发送邮件"
+	                 android:textColor="#ff70bd34"
+	                 android:textSize="14sp" />
+
+	            </LinearLayout>    
+	        </LinearLayout>
+        <ImageView android:id="@+id/p_auto_setting_low_bettery_mode_value_arrow" 
+           android:layout_width="28dp" 
+           android:layout_height="28dp" 
+           android:src="@drawable/p_selector_arrow_right_gra" />
+       
+   </LinearLayout>
+   
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff1d222a">
+        
+	    </LinearLayout> 
+</LinearLayout>

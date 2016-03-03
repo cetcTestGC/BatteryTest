@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView android:textColor="#ff767e8d" 
+        android:gravity="left|center" 
+        android:background="#ff303743" 
+        android:paddingLeft="16dp" 
+        android:paddingRight="12dp" 
+        android:layout_width="fill_parent" 
+        android:layout_height="36dp" 
+        android:text="模式设置" />
+    
+    
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+    
+   <include android:id="@+id/power_low_mode_include"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       layout="@layout/power_low_mode_item" />
+   
+   <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+   
+   <LinearLayout 
+       android:id="@+id/power_low_value_layout"
+       android:gravity="center_vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="64dp"
+       android:background="@drawable/p_selector_btn_trans">
+       <TextView android:textSize="16sp" 
+           android:textColor="@color/p_selector_color_gray" 
+           android:gravity="left|center" 
+           android:id="@+id/p_auto_setting_low_bettery_mode_value_title" 
+           android:layout_width="wrap_content" 
+           android:layout_height="fill_parent" 
+           android:text="低电量开启值" 
+           android:layout_weight="1.0" />
+       <TextView android:textSize="14sp" 
+           android:textColor="#ff586272" 
+           android:gravity="right|center" 
+           android:id="@+id/power_low_value_txt" 
+           android:layout_width="wrap_content" 
+           android:layout_height="fill_parent" 
+           android:text="20%" 
+           android:layout_weight="1.0" />
+       <ImageView android:id="@+id/p_auto_setting_low_bettery_mode_value_arrow" 
+           android:layout_width="28dp" 
+           android:layout_height="28dp" 
+           android:src="@drawable/p_selector_arrow_right_gra" />
+   </LinearLayout>
+   
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+   
+   <LinearLayout 
+       android:id="@+id/power_low_mode_layout"
+       android:gravity="center_vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="64dp"
+       android:background="@drawable/p_selector_btn_trans">
+       <TextView android:textSize="16sp" 
+           android:textColor="@color/p_selector_color_gray" 
+           android:gravity="left|center" 
+           android:id="@+id/p_auto_setting_low_bettery_mode_value_title" 
+           android:layout_width="wrap_content" 
+           android:layout_height="fill_parent" 
+           android:text="低电量开启模式" 
+           android:layout_weight="1.0" />
+       <TextView android:textSize="14sp" 
+           android:textColor="#ff586272" 
+           android:gravity="right|center" 
+           android:id="@+id/power_low_mode_txt" 
+           android:layout_width="wrap_content" 
+           android:layout_height="fill_parent" 
+           android:text="低功耗模式   " 
+           android:layout_weight="1.0" />
+       
+   </LinearLayout>
+   
+    <View android:background="@drawable/p_line" 
+        android:layout_width="fill_parent" 
+        android:layout_height="2.0px" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff1d222a">
+    <TextView android:textSize="14sp" 
+        android:textColor="#ff767e8d" 
+        android:id="@+id/p_low_bettery_mode_value_describe_title" 
+        android:paddingLeft="16dp" 
+        android:paddingRight="16dp" 
+        android:visibility="gone" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp" />
+        <TextView android:textSize="14dp" 
+            android:textColor="#ff586277" 
+            android:id="@+id/p_low_bettery_mode_value_describe" 
+            android:paddingLeft="16dp" 
+            android:paddingRight="16dp"
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content" 
+             android:layout_marginTop="6dp" 
+             android:text="请先设置低电量触发值以及开启模式,然后再开启低电量模式,设置以后在手机电量较低时将自动开启" />
+        
+	    </LinearLayout> 
+	     
+		
+    
+    
+    
+    
+
+</LinearLayout>

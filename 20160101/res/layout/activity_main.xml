@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="@drawable/bg_battery_listab">
+
+        <RadioButton
+             android:id="@+id/bt1"
+            style="@style/battery_tab"
+            android:drawableTop="@drawable/battery_info_selector"
+            android:text="电池信息" />
+
+        <RadioButton
+             android:id="@+id/bt2"
+            style="@style/battery_tab"
+            android:drawableTop="@drawable/forecast_selector"
+            android:text="我的预留" />
+
+        <RadioButton
+             android:id="@+id/bt3"
+            style="@style/battery_tab"
+            android:drawableTop="@drawable/statistic_selector"
+            android:text="耗电分析" />
+
+        <RadioButton
+             android:id="@+id/bt4"
+            style="@style/battery_tab"
+            android:drawableTop="@drawable/setting_selector"
+            android:text="模式设置" />
+
+        <RadioButton
+             android:id="@+id/bt5"
+            style="@style/battery_tab"
+            android:drawableTop="@drawable/about_selector"
+            android:text="相关信息" />
+    </RadioGroup>
+</LinearLayout>
